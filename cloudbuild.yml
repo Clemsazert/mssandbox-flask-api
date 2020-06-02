@@ -1,0 +1,5 @@
+steps:
+    - name: 'gcr.io/cloud-builders/docker'
+      args: [ 'build', '-t', 'gcr.io/mssandbox-278805/mssandbox_flask_api:$SHORT_SHA', '.' ]
+    - name: 'gcr.io/cloud-builders/docker'
+      args: ['push', gcr.io/mssandbox-278805/mssandbox_flask_api']
