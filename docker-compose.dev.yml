@@ -9,4 +9,6 @@ services:
         ports:
             - "8001:5000"
         container_name: flask-api
+        env_file:
+            .env
         command: python app.py
