@@ -18,6 +18,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
+    - name: pip upgrade
+      run: pip install --upgrade pip
     - name: dependancies
       run: pip install -r requirements-ci.txt
     - name: linter
