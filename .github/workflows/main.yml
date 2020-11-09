@@ -18,8 +18,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - name: pip upgrade
-      run: pip install --upgrade pip
+    - uses: actions/setup-python@v2
+      with:
+        python-version: '3.8.x'
     - name: dependancies
       run: pip install -r requirements-ci.txt
     - name: linter
