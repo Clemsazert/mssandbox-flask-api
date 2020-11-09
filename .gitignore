@@ -1,2 +1,11 @@
+# Cache
 __pycache__
+
+# Environment
 venv/
+
+# Secrets
+.env
+
+# IDE
+.vscode/
